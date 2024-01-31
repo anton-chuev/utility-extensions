@@ -201,7 +201,7 @@ public extension UIView {
 }
 
 // MARK: - Gradient background
-extension UIView {
+public extension UIView {
     @discardableResult
     func applyGradient(colours: [UIColor]) -> CAGradientLayer {
         self.applyGradient(colours: colours, locations: nil)
@@ -232,7 +232,7 @@ public final class VisualEffectView: UIVisualEffectView {
     /// - Parameters:
     ///   - effect: visual effect, eg UIBlurEffect(style: .dark)
     ///   - intensity: custom intensity from 0.0 (no effect) to 1.0 (full effect) using linear scale
-    init(style: UIBlurEffect.Style, intensity: CGFloat) {
+    public init(style: UIBlurEffect.Style, intensity: CGFloat) {
         theEffect = UIBlurEffect(style: style)
         customIntensity = intensity
         super.init(effect: nil)
