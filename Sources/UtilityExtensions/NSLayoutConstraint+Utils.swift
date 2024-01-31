@@ -1,7 +1,7 @@
 import UIKit
 
 public extension NSLayoutConstraint {
-    func setMultiplier(multiplier:CGFloat) {
+    func setMultiplier(_ multiplier:CGFloat) {
         let newConstraint = NSLayoutConstraint(
             item: firstItem as Any,
             attribute: firstAttribute,
