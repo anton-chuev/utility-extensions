@@ -78,7 +78,7 @@ public extension UIImageView {
 }
 
 
-extension UIImageView {
+public extension UIImageView {
     func setImage(PDFdata: Data?) {
         setImageTask { completeWithImage in
             let height = self.frame.height
