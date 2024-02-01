@@ -221,6 +221,16 @@ public extension UIView {
     }
 }
 
+public extension UIView {
+    static func safeAreaTopInset() -> CGFloat {
+        UIApplication.shared.keyWindow()?.safeAreaInsets.top ?? 0
+    }
+    
+    static func safeAreaBottomInset() -> CGFloat {
+        return UIApplication.shared.keyWindow()?.safeAreaInsets.bottom ?? 0
+    }
+}
+
 public final class VisualEffectView: UIVisualEffectView {
     
     private let theEffect: UIVisualEffect
